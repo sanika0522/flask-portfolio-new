@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<h1 class="text-center mb-5">Contact Me</h1>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+{% if success %}
+
+<div class="alert alert-success">
+
+Message Sent Successfully!
+
+</div>
+
+{% endif %}
+
+<form method="POST">
+
+<div class="mb-3">
+
+<input
+type="text"
+name="name"
+class="form-control"
+placeholder="Your Name"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<input
+type="email"
+name="email"
+class="form-control"
+placeholder="Your Email"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<textarea
+class="form-control"
+rows="6"
+name="message"
+placeholder="Your Message"
+required>
+
+</textarea>
+
+</div>
+
+<button class="btn btn-primary">
+
+Send Message
+
+</button>
+
+</form>
+
+<hr class="my-5">
+
+<h3>Contact Information</h3>
+
+<p>
+
+📧 Email :
+kadamsanika233@gmail.com
+
+</p>
+
+<p>
+
+📱 Phone :
++91 7378420124
+
+</p>
+
+<p>
+    <i class="fab fa-github"></i>
+    <strong>GitHub:</strong>
+    <a href="https://github.com/sanika0522" target="_blank" class="text-info text-decoration-none">
+        github.com/sanika0522
+    </a>
+</p>
+
+<p>
+    <i class="fab fa-linkedin"></i>
+    <strong>LinkedIn:</strong>
+    <a href="https://linkedin.com/in/sanika-kadam17" target="_blank" class="text-info text-decoration-none">
+        linkedin.com/in/sanika-kadam17
+    </a>
+</p>
+</div>
+
+</div>
+
+{% endblock %}
